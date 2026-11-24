@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra, Papel e Tesoura - Game Jam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <h1>Pedra, Papel e Tesoura</h1>
+        <p class="dica">Clique ou use o teclado: <strong>[1]</strong> Pedra | <strong>[2]</strong> Papel | <strong>[3]</strong> Tesoura | <strong>[R]</strong> Resetar</p>
+
+        <!-- Placar -->
+        <section class="placar" aria-label="Placar do jogo">
+            <div class="score-box">
+                <span>Você</span>
+                <strong id="ptsJogador">0</strong>
+            </div>
+            <div class="score-box">
+                <span>Empates</span>
+                <strong id="ptsEmpate">0</strong>
+            </div>
+            <div class="score-box">
+                <span>CPU</span>
+                <strong id="ptsCpu">0</strong>
+            </div>
+        </section>
+
+        <!-- Botões de Jogada -->
+        <section class="botoes-jogada">
+            <button class="btn-escolha" data-jogada="pedra" aria-label="Escolher Pedra (Tecla 1)">🪨 Pedra [1]</button>
+            <button class="btn-escolha" data-jogada="papel" aria-label="Escolher Papel (Tecla 2)">📄 Papel [2]</button>
+            <button class="btn-escolha" data-jogada="tesoura" aria-label="Escolher Tesoura (Tecla 3)">✂️ Tesoura [3]</button>
+        </section>
+
+        <div id="resultado" class="resultado" aria-live="polite">Faça a sua jogada!</div>
+
+        <button id="btnReset" class="btn-reset" aria-label="Resetar placar (Tecla R)">🔄 Resetar Placar [R]</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
